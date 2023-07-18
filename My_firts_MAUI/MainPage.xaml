@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="My_firts_MAUI.MainPage"
+             Title="Main">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="15"
+            Padding="20,0"
+            VerticalOptions="Center">
+
+            <Button
+                x:Name="toAddPageButton"
+                Text="Добавить пользователя"
+                HorizontalOptions="Start"
+                Clicked="ToAddPage"
+                />
+            <Button
+                x:Name="toAccessPageButton"
+                Text="Получить доступ к пользователю"
+                HorizontalOptions="Start"
+                Clicked="ToAccessPage"/>
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Показать информацию обо всех пользователях"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnShowClicked"
+                HorizontalOptions="Center" />
+
+            <Editor
+                FontSize="20"
+                x:Name="UsersData"
+                WidthRequest="180"
+                HeightRequest="300"
+                HorizontalOptions="Center"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
