@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="My_firts_MAUI.DeletePage"
+             Title="DeletePage">
+    <VerticalStackLayout HorizontalOptions="Center">
+        <Label 
+            Text="Страница удаления"
+            VerticalOptions="Center" 
+            FontSize="20"/>
+        <Entry
+            Placeholder="Введите имя пользователя для удаления"
+            FontSize="20"
+            x:Name="DeleteUserName"
+            />
+        <Button
+            Text="Удалить"
+            FontSize="20"
+            Clicked="DeleteUser"
+            />
+    </VerticalStackLayout>
+</ContentPage>

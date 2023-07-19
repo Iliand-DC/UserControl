@@ -16,16 +16,31 @@
                 x:Name="toAddPageButton"
                 Text="Добавить пользователя"
                 Clicked="ToAddPage"
+                FontSize="20"
                 />
             <Button
                 x:Name="toAccessPageButton"
                 Text="Получить доступ к пользователю"
+                FontSize="20"
                 Clicked="ToAccessPage"/>
+            <Button
+                x:Name="toUpdatePageButton"
+                Text="Изменить информацию о пользователе"
+                FontSize="20"
+                Clicked="ToUpdatePage"
+                />
+            <Button
+                x:Name="toDeletePageButton"
+                Text="Удалить пользователя"
+                Clicked="ToDeletePage"
+                FontSize="20"
+                />
 
             <Button
                 x:Name="CounterBtn"
                 Text="Показать информацию обо всех пользователях"
                 SemanticProperties.Hint="Counts the number of times you click"
+                FontSize="20"
                 Clicked="OnShowClicked" />
 
             <Editor
