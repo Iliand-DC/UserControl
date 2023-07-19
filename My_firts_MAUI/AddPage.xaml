@@ -7,7 +7,8 @@
     <VerticalStackLayout
             Spacing="15"
             Padding="20,0"
-            VerticalOptions="Center">
+            VerticalOptions="Center"
+            HorizontalOptions="Center">
         <Label
             Text="Добавление нового пользователя"
             FontSize="20"

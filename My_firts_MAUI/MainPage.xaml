@@ -8,33 +8,31 @@
         <VerticalStackLayout
             Spacing="15"
             Padding="20,0"
-            VerticalOptions="Center">
+            Margin="20"
+            VerticalOptions="Center"
+            HorizontalOptions="Center">
 
             <Button
                 x:Name="toAddPageButton"
                 Text="Добавить пользователя"
-                HorizontalOptions="Start"
                 Clicked="ToAddPage"
                 />
             <Button
                 x:Name="toAccessPageButton"
                 Text="Получить доступ к пользователю"
-                HorizontalOptions="Start"
                 Clicked="ToAccessPage"/>
 
             <Button
                 x:Name="CounterBtn"
                 Text="Показать информацию обо всех пользователях"
                 SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnShowClicked"
-                HorizontalOptions="Center" />
+                Clicked="OnShowClicked" />
 
             <Editor
                 FontSize="20"
                 x:Name="UsersData"
                 WidthRequest="180"
-                HeightRequest="300"
-                HorizontalOptions="Center"/>
+                HeightRequest="300"/>
 
         </VerticalStackLayout>
     </ScrollView>

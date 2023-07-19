@@ -53,17 +53,18 @@ namespace My_firts_MAUI
             else Console.WriteLine("Пользователя с таким именем не существует.");
         }
         // Получить доступ к пользователю по имени
-        public void GetAccess(String name, String password)
+        public int GetAccess(String name, String password)
         {
             var users = db.Users.ToList();
             if (UserExist(name))
             {
                 User? user = users.FirstOrDefault(p => p.Name == name);
                 if (PasswordChecker.Check(user, password))
-                    Console.WriteLine("Доступ получен.");
-                else Console.WriteLine("В доступе отказано.");
+                    return 0;
+                else return 1;
             }
-            else Console.WriteLine("Пользователя с таким именем не существует.");
+            else
+                return 2;
         }
     }
 }
