@@ -39,15 +39,8 @@
             <Button
                 x:Name="CounterBtn"
                 Text="Показать информацию обо всех пользователях"
-                SemanticProperties.Hint="Counts the number of times you click"
                 FontSize="20"
                 Clicked="OnShowClicked" />
-
-            <Editor
-                FontSize="20"
-                x:Name="UsersData"
-                WidthRequest="180"
-                HeightRequest="300"/>
 
         </VerticalStackLayout>
     </ScrollView>

@@ -7,6 +7,10 @@ namespace My_firts_MAUI
         public string Name { get; set; }
         public int Age { get; set; }
         public string Password { get; set; }
+        public string ToString()
+        {
+            return $"{Id}. Имя: {Name} | Возраст: {Age}";
+        }
     }
 }
 

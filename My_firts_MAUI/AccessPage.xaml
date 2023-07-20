@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="My_firts_MAUI.AccessPage"
              Title="AccessPage">
-    <VerticalStackLayout Spacing="15" Padding="25" VerticalOptions="Center"
+    <VerticalStackLayout Spacing="15" Padding="20" VerticalOptions="Center"
+                         Margin="20"
                          HorizontalOptions="Center">
         <Label 
             Text="Получение доступа к пользователю"

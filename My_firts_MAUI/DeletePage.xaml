@@ -3,7 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="My_firts_MAUI.DeletePage"
              Title="DeletePage">
-    <VerticalStackLayout HorizontalOptions="Center">
+    <VerticalStackLayout HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         Margin="20"
+                         Padding="20"
+                         Spacing="15">
         <Label 
             Text="Страница удаления"
             VerticalOptions="Center" 
